@@ -9,13 +9,13 @@
   <br />
   <br />
   
-  <img src="./readme-images/project-logo.png" />
+  <img src="./-/-.png" />
 
-  <h2 align="center">Jack - Personal portfolio</h2>
+  <h2 align="center">Jamie - Personal portfolio</h2>
 
-  This website is fully responsive personal portfolio, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
+  This website is my personal portfolio, <br />
 
-  <a href="https://codewithsadee.github.io/jack-portfolio/"><strong>➥ Live Demo</strong></a>
+  <a href="https://jamiedeocampo.github.io//"><strong>➥ Visit</strong></a>
 
 </div>
 
@@ -23,7 +23,7 @@
 
 ### Demo Screeshots
 
-![Jack Portfolio Desktop Demo](./readme-images/desktop.png "Desktop Demo")
+![Jack Portfolio Desktop Demo](./-/.png "")
 
 ### Prerequisites
 
