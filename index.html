@@ -517,26 +517,25 @@
 <head>
   <!-- other head content -->
   <style>
-    .skills-list {
-      display: grid;
-      grid-template-columns: repeat(4, 2fr);
-      grid-template-rows: repeat(2, auto);
-      gap: 20px;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      max-width: 600px;
-    }
-    .skill-card {
-      text-align: center;
-    }
-    .card-icon img {
-      width: 100px;
-      height: 100px;
-      object-fit: contain;
-      display: inline-block;
-    }
- 
+ .skills-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 800px; /* increased width to fit 4 columns */
+}
+.skill-card {
+  text-align: center;
+}
+.card-icon img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  display: inline-block;
+}
 
 <div class="skills-box" data-skills-box>
   <ul class="skills-list">
