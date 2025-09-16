@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jamie - personal portfolio</title>
+  <title>Jamie de Ocampo | Portfolio</title>
 
   <!-- 
     - favicon
@@ -144,10 +144,186 @@
        
     <div class="about-content section-content">
 	 
-	 <p class="section-subtitle">About me</p>
+	 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamie De Ocampo - About Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-     <p class="section-text">
-            Hi! I’m Jamie De Ocampo, I have a passion for data and here are some of my works.
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            transform: translateY(0);
+            transition: all 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .intro {
+            font-size: 1.2rem;
+            color: #34495e;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .highlight {
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        p {
+            color: #555;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            text-align: justify;
+            transition: color 0.3s ease;
+        }
+
+        p:hover {
+            color: #2c3e50;
+        }
+
+        .specialization {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            border-left: 5px solid #667eea;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .specialization::before {
+            content: '📊';
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 2rem;
+            opacity: 0.3;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 35px;
+            padding: 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transform: scale(1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cta:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 25px;
+                margin: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .intro {
+                font-size: 1.1rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        /* Subtle animations */
+        .container > * {
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .container > *:nth-child(1) { animation-delay: 0.1s; }
+        .container > *:nth-child(2) { animation-delay: 0.2s; }
+        .container > *:nth-child(3) { animation-delay: 0.3s; }
+        .container > *:nth-child(4) { animation-delay: 0.4s; }
+        .container > *:nth-child(5) { animation-delay: 0.5s; }
+        .container > *:nth-child(6) { animation-delay: 0.6s; }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About Me</h1>
+        
+        <p class="intro">Hi, I'm <span class="highlight">Jamie De Ocampo</span>! I'm a data analyst who thrives on uncovering insights hidden within complex datasets.</p>
+        
+        <p>What started as curiosity about patterns and trends has evolved into a genuine passion for transforming raw data into actionable stories that drive meaningful decisions.</p>
+        
+        <div class="specialization">
+            <p><strong>I specialize in turning numbers into narratives</strong>, whether it's identifying market opportunities, optimizing business processes, or revealing user behavior patterns. My approach combines technical expertise with creative problem-solving to deliver clear, impactful visualizations and recommendations.</p>
+        </div>
+        
+        <p>When I'm not diving deep into spreadsheets or crafting the perfect dashboard, you'll find me exploring new analytical tools and staying current with industry trends. I believe that great data analysis isn't just about the numbers—it's about understanding the human story they tell.</p>
+        
+        <div class="cta">
+            <p>Take a look at some of my recent projects below to see how I bring data to life.</p>
+        </div>
+    </div>
+</body>
 	 
 	 </div>
 
@@ -550,12 +726,8 @@
 
       <p class="h1 logo">
         <a href="#">
-          Jamie<span>.</span>
+          Jamie de Ocampo<span>.</span>
         </a>
-      </p>
-
-      <p class="copyright">
-        &copy; 2022 <a href="#">jamiedeocampo</a>. All rights reserved
       </p>
 
     </div>
