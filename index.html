@@ -1,144 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jamie de Ocampo | Portfolio</title>
-
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
-    rel="stylesheet">
-</head>
-
-<body id="top" class="dark_theme">
-
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header" data-header>
-    <div class="container">
-
-      <h1 class="h1 logo">
-        <a href="#">Jamie<span>.</span></a>
-      </h1>
-
-      <div class="navbar-actions">
-
-        <select name="language" id="lang">
-          <option value="en">En</option>
-          <option value="ar">Ar</option>
-        </select>
-
-        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
-          <span class="icon"></span>
-        </button>
-
-      </div>
-
-      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
-        <span class="one"></span>
-        <span class="two"></span>
-        <span class="three"></span>
-      </button>
-
-      <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
-
-          <li>
-            <a href="#home" class="navbar-link">Home.</a>
-          </li>
-
-          <li>
-            <a href="#about" class="navbar-link">About.</a>
-          </li>
-
-          <li>
-            <a href="#skills" class="navbar-link">Skills.</a>
-          </li>
-
-          <li>
-            <a href="#portfolio" class="navbar-link">Portfolio.</a>
-          </li>
-
-          <li>
-            <a href="#contact" class="navbar-link">Contact.</a>
-          </li>
-
-        </ul>
-      </nav>
-
-    </div>
-  </header>
-
-<main>
-    <article class="container">
-
-      <!-- 
-        - #HERO
-      -->
-
-        <ul class="hero-social-list">
-
-          <li>
-            <a href="#" class="hero-social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-
-              <div class="tooltip">Facebook</div>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="hero-social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-
-              <div class="tooltip">Twitter</div>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="hero-social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-
-              <div class="tooltip">Linkedin</div>
-            </a>
-          </li>
-
-        </ul>
-
-      </section>
-
-
-      <!-- 
-        - #STATS
-      -->
-
-      <!-- 
-        - #ABOUT
-      -->
-    
-    <section class="about" id="about">
-	<img src="./assets/images/profile.jpg" alt="jamiedeocampo" style="width:500px;height:475px;">
-
-<div class="about-content section-content">
-	 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -173,6 +34,34 @@
         .container:hover {
             transform: translateY(-5px);
             box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .profile-image {
+            width: 250px;
+            height: 237px;
+            border-radius: 20px;
+            object-fit: cover;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+        }
+
+        .profile-text {
+            flex: 1;
+            min-width: 300px;
         }
 
         h1 {
@@ -273,6 +162,21 @@
             p {
                 font-size: 1rem;
             }
+
+            .profile-section {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .profile-image {
+                width: 200px;
+                height: 190px;
+            }
+
+            .profile-text {
+                min-width: auto;
+            }
         }
 
         /* Subtle animations */
@@ -304,7 +208,12 @@
     <div class="container">
         <h1>About Me</h1>
         
-        <p class="intro">Hi, I'm <span class="highlight">Jamie De Ocampo</span>! I'm a data analyst who thrives on uncovering insights hidden within complex datasets.</p>
+        <div class="profile-section">
+            <img src="./assets/images/profile.jpg" alt="jamiedeocampo" class="profile-image">
+            <div class="profile-text">
+                <p class="intro">Hi, I'm <span class="highlight">Jamie De Ocampo</span>! I'm a data analyst who thrives on uncovering insights hidden within complex datasets.</p>
+            </div>
+        </div>
         
         <p>What started as curiosity about patterns and trends has evolved into a genuine passion for transforming raw data into actionable stories that drive meaningful decisions.</p>
         
@@ -318,443 +227,308 @@
             <p>Take a look at some of my recent projects below to see how I bring data to life.</p>
         </div>
     </div>
-</body>
-	 
-	 </div>
 
-     
-	 
-		  
-    </section>
-
-
-
-
-
-      <!-- 
-        - #SKILLS
-      -->
-
-      <section class="skills" id="skills">
-
-        <div class="skills-content section-content">
-
-          <p class="section-subtitle">My skills</p>
-		  <br> </br>
-
-          <h2 class="h3 section-title">My Skills Include:</h2>
-
-          <p class="section-text">
-            These skills help me process, analyze & share data.
-          </p>
-		  
-		  <div class="skills-toggle" data-toggle-box>
-            <button class="toggle-btn active" data-toggle-btn>Hard</button>
-
-            <button class="toggle-btn" data-toggle-btn>Soft</button>
-          </div>
-		  
-		</div>
-
-        <div class="skills-box" data-skills-box>
-
-          <ul class="skills-list">
-
-             <li>
-              <div class="skill-card">
-                <div class="tooltip">R Programming</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/r.png" alt="R logo">
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">MySQL</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/mysql.png" alt="MySQL logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Excel</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/excel.png" alt="Excel logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Tableau</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/tableau.png" alt="Tableau logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Power BI</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/powerbi.png" alt="Power BI logo">
-                </div>
-              </div>
-            </li>
-			
-			<li>
-              <div class="skill-card">
-                <div class="tooltip">MS Office</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/msoffice.png" alt="MS Office logo">
-                </div>
-              </div>
-            </li>
-			</ul>
-			
-			<ul class="tools-list">
-
-            <li>
-              <div class="soft-card">
-                <div class="softtip"></div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/softskills.png" alt="soft logo">
-                </div>
-              </div>
-            </li>
-			
-		</ul>
-
-        </div>
-
-      </section>
-
-      <!-- 
-        - #PROJECTS
-      -->
-
-				<section class="skills" id="skills">
-
-			<div class="skills-content section-content">
-
-			  <p class="section-subtitle">Projects</p>
-
-			
-			<section class="project" id="portfolio">
-			<h2 class="h3 section-title"></h2>
-			
-			
-			<h2 class="h3 section-title">Supermarket Sales Analysis Case Study</h2>
-		  
-			<li>
-				<a href="https://github.com/jamiedeocampo/supermarket-sales" class="project-card">
-
-				  <figure class="">
-					<img src="./assets/images/supermarket_sales02.png" class="w-100" alt="COVID-19 Global Vaccine Tracker" style="max-width: 100%;">
-				  </figure>
-
-				  <div class="">
-					<h3 class="h4 card-title">Supermarket Sales Analysis Case Study</h3>
-
-					<time class="publish-date" datetime="2023-01">January 2023</time>
-				  </div>
-
-				</a>
-			  </li>
-			
-			<section class="project" id="portfolio">
-			<h2 class="h3 section-title">Excel</h2>
-			
-			
-			
-			<li>
-				<a href="https://github.com/jamiedeocampo/my-excel-works" class="project-card">
-
-				  <figure class="">
-					<img src="./assets/images/monthly_sales.png" class="w-100" alt="COVID-19 Global Vaccine Tracker" style="max-width: 100%;">
-				  </figure>
-
-				  <div class="">
-					<h3 class="h4 card-title">Monthly Sales</h3>
-
-					<time class="publish-date" datetime="2023-01">January 2023</time>
-				  </div>
-
-				</a>
-			  </li>
-		  
-			<li>
-				<a href="https://github.com/jamiedeocampo/my-excel-works" class="project-card">
-
-				  <figure class="">
-					<img src="./assets/images/excelwork2.png" class="w-100" alt="COVID-19 Global Vaccine Tracker" style="max-width: 100%;">
-				  </figure>
-
-				  <div class="">
-					<h3 class="h4 card-title">Pivot Table Report</h3>
-
-					<time class="publish-date" datetime="2023-01">January 2023</time>
-				  </div>
-
-				</a>
-			  </li>
-			  
-			  
-			<li>
-				<a href="https://github.com/jamiedeocampo/my-excel-works" class="project-card">
-
-				  <figure class="">
-					<img src="./assets/images/excelwork.png" class="w-100" alt="COVID-19 Global Vaccine Tracker" style="max-width: 100%;">
-				  </figure>
-
-				  <div class="">
-					<h3 class="h4 card-title">Sales Performance Dashboard</h3>
-
-					<time class="publish-date" datetime="2023-01">January 2023</time>
-				  </div>
-
-				</a>
-			  </li>
-			 </ul>
-			 
-	  
-		  <section class="project" id="portfolio">
-			<h2 class="h3 section-title">Tableau</h2>
-		  
-			<li>
-				<a href="https://public.tableau.com/app/profile/jamie.de.ocampo/viz/COVID-19GlobalVaccineTracker_16752431539760/GlobalVaccineTracker?publish=yes" class="project-card">
-
-				  <figure class="">
-					<img src="./assets/images/project-4.png" class="w-100" alt="COVID-19 Global Vaccine Tracker" style="max-width: 100%;">
-				  </figure>
-
-				  <div class="">
-					<h3 class="h4 card-title">COVID-19 Global Vaccine Tracker</h3>
-
-					<time class="publish-date" datetime="2023-01">January 2023</time>
-				  </div>
-
-				</a>
-			  </li>
-			  
-			  <li>
-				<a href="https://public.tableau.com/app/profile/jamie.de.ocampo/viz/MCUMoviesTimeline/Sheet1?publish=yes" class="project-card">
-
-				  <figure class="">
-					<img src="./assets/images/project-3.png" class="w-100" alt="COVID-19 Global Vaccine Tracker" style="max-width: 100%;">
-				  </figure>
-
-				  <div class="">
-					<h3 class="h4 card-title">MCU Movies Timeline</h3>
-
-					<time class="publish-date" datetime="2023-01">January 2023</time>
-				  </div>
-
-				</a>
-			  </li>
-			  
-			<li>
-				<a href="https://public.tableau.com/app/profile/jamie.de.ocampo/viz/MCUMoviesRankings/Sheet1" class="project-card">
-
-				  <figure class="">
-					<img src="./assets/images/project-2.png" class="w-100" alt="COVID-19 Global Vaccine Tracker" style="max-width: 100%;">
-				  </figure>
-
-				  <div class="">
-					<h3 class="h4 card-title">MCU Movies Rankings</h3>
-
-					<time class="publish-date" datetime="2023-01">January 2023</time>
-				  </div>
-
-				</a>
-			  </li>
-			  
-			  <li>
-				<a href="https://public.tableau.com/app/profile/jamie.de.ocampo/viz/CO2Emissions-WorldBankData_16781642901320/CO2emissions-WorldBankData" class="project-card">
-
-				  <figure class="">
-					<img src="./assets/images/C02_World_Bank.png" class="w-100" alt="CO2 emissions - World Bank Data" style="max-width: 100%;">
-				  </figure>
-
-				  <div class="">
-					<h3 class="h4 card-title">CO2 emissions - World Bank Data</h3>
-
-					<time class="publish-date" datetime="2023-01">January 2023</time>
-				  </div>
-
-				</a>
-			  </li>
-			  
-			</ul>
-
-		  </section>
-
-
-      <!-- 
-        - #CONTACT
-      -->
-		<section class="skills" id="skills">
-
-			<div class="skills-content section-content">
-
-			  <p class="section-subtitle">Contact</p>
-			  
-			  <br> </br>
-       
-				<h2 class="h3 section-title">Drop a Message</h2>
-
-				  <ul class="contact-list">
-
-					<li class="contact-list-item">
-
-					  <div class="contact-item-icon">
-						<ion-icon name="location-outline"></ion-icon>
-					  </div>
-
-					  <div class="wrapper">
-						<h3 class="h4 contact-item-title">Address:</h3>
-
-						<address class="contact-info">
-						  Blk 1 Lot 15, Primrose Hills Subdivision, Mahabang Parang, Angono, Rizal
-						</address>
-					  </div>
-
-					</li>
-
-            <li class="contact-list-item">
-
-              <div class="contact-item-icon">
-                <ion-icon name="call-outline"></ion-icon>
-              </div>
-
-              <div class="wrapper">
-                <h3 class="h4 contact-item-title">Phone:</h3>
-
-                <a href="tel:01234567789" class="contact-info">09096060196</a>
-
-              </div>
-
-            </li>
-
-            <li class="contact-list-item">
-
-              <div class="contact-item-icon">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
-
-              <div class="wrapper">
-                <h3 class="h4 contact-item-title">Email:</h3>
-
-                <a href="mailto:info@jack.com" class="contact-info">jamie.lopez.deocampo@gmail.com</a>
-
-
-              </div>
-
-            </li>
-
-            <li>
-              <ul class="contac-social-list">
-
-                <li>
-                  <a href="#" class="contact-social-link">
-                    <div class="tooltip">Facebook</div>
-
-                    <ion-icon name="logo-facebook"></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="contact-social-link">
-                    <div class="tooltip">Twitter</div>
-
-                    <ion-icon name="logo-twitter"></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="https://www.linkedin.com/in/jamie-de-ocampo-34b0b01a0/" class="contact-social-link">
-                    <div class="tooltip">Linkedin</div>
-
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="contact-social-link">
-                    <div class="tooltip">Youtube</div>
-
-                    <ion-icon name="logo-youtube"></ion-icon>
-                  </a>
-                </li>
-
-              </ul>
-            </li>
-
-          </ul>
-
-        </div>
-
-      </section>
-
-    </article>
-  </main>
-
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer">
+    <!-- Skills Section -->
     <div class="container">
+        <section class="skills" id="skills">
+            <div class="skills-content section-content">
+                <p class="section-subtitle">My skills</p>
+                <br>
+                <h2 class="h3 section-title">My Skills Include:</h2>
+                <p class="section-text">These skills help me process, analyze & share data.</p>
+                
+                <div class="skills-toggle" data-toggle-box>
+                    <button class="toggle-btn active" data-toggle-btn>Hard</button>
+                    <button class="toggle-btn" data-toggle-btn>Soft</button>
+                </div>
+            </div>
 
-      <p class="h1 logo">
-        <a href="#">
-          Jamie de Ocampo<span>.</span>
-        </a>
-      </p>
+            <div class="skills-box" data-skills-box>
+                <ul class="skills-list">
+                    <li>
+                        <div class="skill-card">
+                            <div class="tooltip">R Programming</div>
+                            <div class="card-icon">
+                                <img src="./assets/images/r.png" alt="R logo">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-card">
+                            <div class="tooltip">MySQL</div>
+                            <div class="card-icon">
+                                <img src="./assets/images/mysql.png" alt="MySQL logo">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-card">
+                            <div class="tooltip">Excel</div>
+                            <div class="card-icon">
+                                <img src="./assets/images/excel.png" alt="Excel logo">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-card">
+                            <div class="tooltip">Tableau</div>
+                            <div class="card-icon">
+                                <img src="./assets/images/tableau.png" alt="Tableau logo">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-card">
+                            <div class="tooltip">Power BI</div>
+                            <div class="card-icon">
+                                <img src="./assets/images/powerbi.png" alt="Power BI logo">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-card">
+                            <div class="tooltip">MS Office</div>
+                            <div class="card-icon">
+                                <img src="./assets/images/msoffice.png" alt="MS Office logo">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+                <ul class="tools-list">
+                    <li>
+                        <div class="soft-card">
+                            <div class="softtip"></div>
+                            <div class="card-icon">
+                                <img src="./assets/images/softskills.png" alt="soft logo">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
+        <!-- Projects Section -->
+        <section class="project" id="portfolio">
+            <div class="skills-content section-content">
+                <p class="section-subtitle">Projects</p>
+                <h2 class="h3 section-title">Supermarket Sales Analysis Case Study</h2>
+                
+                <div class="project-item">
+                    <a href="https://github.com/jamiedeocampo/supermarket-sales" class="project-card">
+                        <figure>
+                            <img src="./assets/images/supermarket_sales02.png" class="w-100" alt="Supermarket Sales Analysis" style="max-width: 100%;">
+                        </figure>
+                        <div class="project-info">
+                            <h3 class="h4 card-title">Supermarket Sales Analysis Case Study</h3>
+                            <time class="publish-date" datetime="2023-01">January 2023</time>
+                        </div>
+                    </a>
+                </div>
+
+                <h2 class="h3 section-title">Excel Projects</h2>
+                
+                <div class="project-grid">
+                    <div class="project-item">
+                        <a href="https://github.com/jamiedeocampo/my-excel-works" class="project-card">
+                            <figure>
+                                <img src="./assets/images/monthly_sales.png" class="w-100" alt="Monthly Sales">
+                            </figure>
+                            <div class="project-info">
+                                <h3 class="h4 card-title">Monthly Sales</h3>
+                                <time class="publish-date" datetime="2023-01">January 2023</time>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-item">
+                        <a href="https://github.com/jamiedeocampo/my-excel-works" class="project-card">
+                            <figure>
+                                <img src="./assets/images/excelwork2.png" class="w-100" alt="Pivot Table Report">
+                            </figure>
+                            <div class="project-info">
+                                <h3 class="h4 card-title">Pivot Table Report</h3>
+                                <time class="publish-date" datetime="2023-01">January 2023</time>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-item">
+                        <a href="https://github.com/jamiedeocampo/my-excel-works" class="project-card">
+                            <figure>
+                                <img src="./assets/images/excelwork.png" class="w-100" alt="Sales Performance Dashboard">
+                            </figure>
+                            <div class="project-info">
+                                <h3 class="h4 card-title">Sales Performance Dashboard</h3>
+                                <time class="publish-date" datetime="2023-01">January 2023</time>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <h2 class="h3 section-title">Tableau Projects</h2>
+                
+                <div class="project-grid">
+                    <div class="project-item">
+                        <a href="https://public.tableau.com/app/profile/jamie.de.ocampo/viz/COVID-19GlobalVaccineTracker_16752431539760/GlobalVaccineTracker?publish=yes" class="project-card">
+                            <figure>
+                                <img src="./assets/images/project-4.png" class="w-100" alt="COVID-19 Global Vaccine Tracker">
+                            </figure>
+                            <div class="project-info">
+                                <h3 class="h4 card-title">COVID-19 Global Vaccine Tracker</h3>
+                                <time class="publish-date" datetime="2023-01">January 2023</time>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-item">
+                        <a href="https://public.tableau.com/app/profile/jamie.de.ocampo/viz/MCUMoviesTimeline/Sheet1?publish=yes" class="project-card">
+                            <figure>
+                                <img src="./assets/images/project-3.png" class="w-100" alt="MCU Movies Timeline">
+                            </figure>
+                            <div class="project-info">
+                                <h3 class="h4 card-title">MCU Movies Timeline</h3>
+                                <time class="publish-date" datetime="2023-01">January 2023</time>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-item">
+                        <a href="https://public.tableau.com/app/profile/jamie.de.ocampo/viz/MCUMoviesRankings/Sheet1" class="project-card">
+                            <figure>
+                                <img src="./assets/images/project-2.png" class="w-100" alt="MCU Movies Rankings">
+                            </figure>
+                            <div class="project-info">
+                                <h3 class="h4 card-title">MCU Movies Rankings</h3>
+                                <time class="publish-date" datetime="2023-01">January 2023</time>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-item">
+                        <a href="https://public.tableau.com/app/profile/jamie.de.ocampo/viz/CO2Emissions-WorldBankData_16781642901320/CO2emissions-WorldBankData" class="project-card">
+                            <figure>
+                                <img src="./assets/images/C02_World_Bank.png" class="w-100" alt="CO2 emissions - World Bank Data">
+                            </figure>
+                            <div class="project-info">
+                                <h3 class="h4 card-title">CO2 emissions - World Bank Data</h3>
+                                <time class="publish-date" datetime="2023-01">January 2023</time>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="skills-content section-content">
+                <p class="section-subtitle">Contact</p>
+                <br>
+                <h2 class="h3 section-title">Drop a Message</h2>
+
+                <ul class="contact-list">
+                    <li class="contact-list-item">
+                        <div class="contact-item-icon">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="wrapper">
+                            <h3 class="h4 contact-item-title">Address:</h3>
+                            <address class="contact-info">
+                                Blk 1 Lot 15, Primrose Hills Subdivision, Mahabang Parang, Angono, Rizal
+                            </address>
+                        </div>
+                    </li>
+
+                    <li class="contact-list-item">
+                        <div class="contact-item-icon">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </div>
+                        <div class="wrapper">
+                            <h3 class="h4 contact-item-title">Phone:</h3>
+                            <a href="tel:09096060196" class="contact-info">09096060196</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-list-item">
+                        <div class="contact-item-icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="wrapper">
+                            <h3 class="h4 contact-item-title">Email:</h3>
+                            <a href="mailto:jamie.lopez.deocampo@gmail.com" class="contact-info">jamie.lopez.deocampo@gmail.com</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <ul class="contact-social-list">
+                            <li>
+                                <a href="#" class="contact-social-link">
+                                    <div class="tooltip">Facebook</div>
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="contact-social-link">
+                                    <div class="tooltip">Twitter</div>
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/jamie-de-ocampo-34b0b01a0/" class="contact-social-link">
+                                    <div class="tooltip">Linkedin</div>
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="contact-social-link">
+                                    <div class="tooltip">Youtube</div>
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="h1 logo">
+                <a href="#">Jamie de Ocampo<span>.</span></a>
+            </p>
+        </footer>
     </div>
-  </footer>
 
+    <!-- Ion Icons Script -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-
-
-
-  <!-- 
-    - #GO TO TOP
-  -->
-
-  <a href="#top" class="go-top" data-go-top title="Go to Top">
-    <ion-icon name="arrow-up"></ion-icon>
-  </a>
-
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <!-- Toggle functionality for skills -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButtons = document.querySelectorAll('[data-toggle-btn]');
+            const skillsBox = document.querySelector('[data-skills-box]');
+            
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    toggleButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    if (this.textContent === 'Hard') {
+                        document.querySelector('.skills-list').style.display = 'grid';
+                        document.querySelector('.tools-list').style.display = 'none';
+                    } else {
+                        document.querySelector('.skills-list').style.display = 'none';
+                        document.querySelector('.tools-list').style.display = 'grid';
+                    }
+                });
+            });
+            
+            // Initialize with hard skills visible
+            document.querySelector('.skills-list').style.display = 'grid';
+            document.querySelector('.tools-list').style.display = 'none';
+        });
+    </script>
 </body>
-
 </html>
